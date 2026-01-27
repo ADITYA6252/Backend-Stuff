@@ -1,0 +1,8 @@
+//user ko profile dene se phle ye check krna hota hai ke user hai kon - authenticatin
+// authorized to perfom some tasks which are allowed to the executed by the admin
+
+//cookie kaise set krte hai.
+//bcrpt kese use krte hai for passsword encrytpion and decryption.
+//jwt kya hai and jwt mein data kaise store karein and behhar nikaale.
+
+$2b$10$5qsEOl8fLi1vtYUQIgDFEeS3f8ljNynmKbQzq6ohvj9AYSRxZwHj6     pololololo

@@ -5,16 +5,18 @@
   "license": "ISC",
   "author": "aditya",
   "type": "commonjs",
-  "main": "script.js",
+  "main": "app.js",
   "scripts": {
     "start": "node ./script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "chalk": "^5.6.2",
     "cookie-parse": "^0.4.0",
     "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
     "one-liner-joke": "^1.2.2"
   },
   "devDependencies": {
