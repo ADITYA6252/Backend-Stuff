@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
@@ -9,7 +10,7 @@ const indexRouter = require("./routes/index");
 const expressSession = require("express-session");
 const flash = require("connect-flash");
 
-require("dotenv").config();
+
 
 const db = require("./config/mongoose-connection");
 
