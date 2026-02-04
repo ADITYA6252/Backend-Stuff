@@ -1,0 +1,120 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(62, 61, 61);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: rgb(35, 35, 35);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+}
+
+
+.left .code {
+  flex: 1;
+  overflow: auto;
+  background-color: rgb(26, 25, 25);
+  border-radius: 0.7rem;
+}
+
+
+.code pre,
+.code pre code {
+  margin: 0;
+  min-height: 100%;
+  background-color: rgb(26, 25, 25);
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: black;
+  background-color: rgb(148, 148, 250);
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+main .right {
+  background-color: rgba(49, 49, 49, 0.527);
+  padding: 1rem 2rem;
+  overflow: auto;
+  color: rgb(194, 194, 194);
+}
+
+
+.left .code::-webkit-scrollbar,
+main .right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.left .code::-webkit-scrollbar-thumb,
+main .right::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+
+
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: auto;
+    height: 50%;
+  }
+
+  main .left .review {
+    bottom: 0.75rem;
+    right: 0.75rem;
+    padding: 0.45rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  main .right {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}

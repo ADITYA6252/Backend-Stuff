@@ -1,0 +1,4 @@
+GET => get ka use tb krte hai jb humne server se data mgvana ya fetch krna hota hai.
+POST => server m data send krna ho.
+patch => server m data already hai or us data ko update krna ho.
+delete => server m data hai or use delete krna hai.
