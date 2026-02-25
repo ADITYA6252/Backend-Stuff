@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev" : "nodemon BackEnd/server.js",
+    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend ",
+    "start" :"nodemon BackEnd/server.js"
   },
   "keywords": [],
   "author": "",
