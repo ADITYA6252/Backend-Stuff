@@ -32,7 +32,7 @@ export default function SignUp() {
     try {
       setLoading(true);
 
-      const res = await fetch("http://localhost:5000/signup", {
+      const res = await fetch("https://ai-product-writer-de3j.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

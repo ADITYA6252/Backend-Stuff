@@ -12,7 +12,7 @@ export default function Dashboard() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("http://localhost:5000/history", {
+        const res = await fetch("https://ai-product-writer-de3j.onrender.com/history", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -34,7 +34,7 @@ export default function Dashboard() {
       setLoading(true);
       const token = localStorage.getItem("token");
 
-      await fetch(`http://localhost:5000/history/${id}`, {
+      await fetch(`https://ai-product-writer-de3j.onrender.com/history/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ export default function Dashboard() {
       setLoading(true);
       const token = localStorage.getItem("token");
 
-      await fetch("http://localhost:5000/history", {
+      await fetch("https://ai-product-writer-de3j.onrender.com/history", {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
